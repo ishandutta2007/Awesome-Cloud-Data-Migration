@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Migration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Data-Migration?style=for-the-badge&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Migration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Data-Migration?style=for-the-badge&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Migration/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Data-Migration?style=for-the-badge&logo=github&color=teal" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Migration/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -75,7 +75,7 @@ The market exhibits **moderate fragmentation**: while foundational cloud infrast
 
 ## 🔓 Open-Source GitHub Projects
 
-The open-source data migration ecosystem delivers battle-tested tools ranging from raw cloud-storage file sync utilities and distributed streaming CDC engines to modular Python-first ELT libraries. Below is the curated list of top open-source projects, **sorted by GitHub star count in descending order**:
+The open-source data migration ecosystem delivers battle-tested tools ranging from raw cloud-storage file sync utilities and distributed streaming CDC engines to modular Python-first ELT libraries. Below is the curated list of top open-source projects, **sorted by GitHub Stars_Count in descending order**:
 
 ### 1. [Rclone](https://github.com/rclone/rclone) [![Stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers)
 * **Description**: *"rsync for cloud storage"* — the gold standard multi-cloud sync, migration, and transfer command-line program.
