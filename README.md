@@ -32,77 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global data integration and cloud data migration market is estimated at approximately **$15B–$20B** (with the broader cloud migration services market projected to reach **$200B+** by the early 2030s, growing at a ~23–25% CAGR). The market exhibits **moderate fragmentation**: while foundational cloud infrastructure and native migration utilities are concentrated among hyperscalers (Amazon AWS, Microsoft Azure, Google Cloud), the application-level data integration, ELT, and iPaaS ecosystem remains highly dynamic and competitive, populated by independent specialist vendors and open-source platforms to address complex multi-cloud and hybrid environments.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Fivetran](https://www.fivetran.com/)**
-
-  **Fully managed ELT platform** with 500+ connectors and automated schema drift handling. **Pricing**: Consumption-based (monthly active rows). **Free tier**: Limited free tier. **Best for**: organizations wanting zero-maintenance data ingestion from SaaS apps and databases into warehouses—**trade-off**: per-row costs escalate quickly at volume.
-
-
-
-- **[Airbyte Cloud](https://airbyte.com/)**
-
-  **Managed version of the open-source Airbyte platform** with 600+ connectors and a Connector Builder. **Pricing**: Consumption-based; open-source self-hosted version available free. **Free tier**: Trial available. **Best for**: teams wanting the open-source connector ecosystem without operating the infrastructure.
-
-
-
-- **[Talend](https://www.talend.com/)** (Qlik)
-
-  **Enterprise data integration and transformation** platform with broad connectivity and data quality tools. **Pricing**: Quote-only; enterprise contracts. **Free tier**: Talend Open Studio (open source) available. **Best for**: enterprises needing complex transformations, data quality, and governance—**trade-off**: heavier platform with steeper learning curve.
-
-
-
-- **[AWS Database Migration Service (DMS)](https://aws.amazon.com/dms/)**
-
-  **Managed database migration and CDC** within AWS. **Pricing**: Instance-based or Serverless (DCU-based); storage and transfer costs apply. **Free tier**: AWS Free Tier applies to some usage. **Best for**: AWS-centric organizations migrating to RDS, Aurora, or Redshift with ongoing replication.
-
-
-
-- **[Azure Data Factory](https://azure.microsoft.com/en-us/products/data-factory)**
-
-  **Cloud data integration service** with 90+ connectors and visual pipeline design. **Pricing**: Consumption-based (activity runs, data movement, compute). **Free tier**: Limited trial. **Best for**: Microsoft-centric organizations wanting native Azure integration.
-
-
-
-- **[Informatica Cloud](https://www.informatica.com/)**
-
-  **Enterprise iPaaS and data integration** with broad connectivity and governance. **Pricing**: Quote-only. **Free tier**: Trial available. **Best for**: large enterprises needing mature data integration with strong governance and metadata management.
-
-
-
-- **[Qlik Replicate](https://www.qlik.com/)**
-
-  **Enterprise CDC and replication** with broad source support including SAP and mainframe. **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises needing high-volume CDC from legacy systems.
-
-
-
-- **[Matillion](https://www.matillion.com/)**
-
-  **Cloud-native ETL/ELT** for Snowflake, BigQuery, Redshift, and Databricks. **Pricing**: Consumption-based. **Free tier**: Trial available. **Best for**: data teams wanting visual transformation pipelines within their cloud warehouse.
-
-
-
-- **[Stitch](https://www.stitchdata.com/)** (Talend)
-
-  **Simple ELT platform** with 100+ connectors and automated schema handling. **Pricing**: Tiered by row volume. **Free tier**: Limited. **Best for**: teams wanting straightforward data ingestion without complex configuration—**trade-off**: fewer transformation capabilities than Matillion or Talend.
-
-
-
-- **[Atlassian Cloud Migration Assistant](https://www.atlassian.com/)**
-
-  **Native migration tool** for moving Atlassian products to Cloud. **Pricing**: Included with Atlassian Cloud subscriptions. **Free tier**: Limited. **Best for**: Atlassian customers migrating from Server/Data Center to Cloud—**not** a general data migration tool.
+| Platform | Company Size (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier / Trial Limits | Description & Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Azure Data Factory](https://azure.microsoft.com/en-us/products/data-factory)** | **Microsoft**: ~$3.9T Market Cap / ~$331.8B Rev | Pay-as-you-go: ~$1.00 per 1,000 cloud activity runs; ~$0.25 per DIU-hour for data movement | **First 5 low-frequency activities/month free** (running <= 1/day); 30-day $200 Azure trial credits | Fully managed cloud data integration service with 90+ connectors and visual pipeline design. Best for Microsoft Azure-native environments. |
+| **[AWS Database Migration Service (DMS)](https://aws.amazon.com/dms/)** | **Amazon (AWS)**: ~$2.6T Market Cap / ~$717B Rev | Provisioned: `dms.t3.micro` from ~$0.018/hr; Serverless from ~$0.082 per DCU-hour | **750 hours/month** of Single-AZ `dms.t3.micro` + 50 GB storage free for 12 months on AWS Free Tier | Managed database migration and ongoing CDC replication into RDS, Aurora, and Redshift. Best for AWS-centric workloads. |
+| **[Atlassian Cloud Migration Assistant](https://www.atlassian.com/)** | **Atlassian**: ~$57B Market Cap / ~$6.57B Rev | Migration tool is **Free**; Atlassian Cloud Standard starts at ~$7.75/user/month (Jira) | **Free forever plan up to 10 users & 2 GB storage** per product (or matching-duration Cloud Migration Trial) | Specialized native migration tooling (JCMA, CCMA) for transitioning Jira/Confluence Server or Data Center workloads to Atlassian Cloud. |
+| **[Qlik Replicate](https://www.qlik.com/)** | **Qlik**: ~$10B Valuation / ~$750M–$1B Rev | Enterprise contracts start at ~$1,000/month (quote-based per endpoint/volume) | **No self-service free tier or trial** (custom sales PoC and guided demo upon request) | High-throughput enterprise Change Data Capture (CDC) and streaming replication supporting mainframe, SAP, and legacy enterprise databases. |
+| **[Informatica Cloud (IDMC)](https://www.informatica.com/)** | **Informatica**: ~$7.6B Market Cap / ~$1.6B Rev | Usage-based via IPUs (Informatica Processing Units) starting ~$90–$100/IPU/month; entry contracts ~$50K/year | **25 IPUs/month free** on Cloud Data Integration Free Service; or **30-day free trial** with access to IDMC modules | Enterprise-grade iPaaS offering comprehensive data cataloging, governance, mass ingestion, and ETL/ELT pipelines for complex enterprise environments. |
+| **[Fivetran](https://www.fivetran.com/)** | **Fivetran**: ~$5.6B Valuation / ~$300M+ ARR | Standard plan starts at ~$500 per million Monthly Active Rows (MAR) + $5/connection base | **500,000 MAR/month free forever** (+ 3,500 reverse ETL rows & 5,000 dbt runs); 14-day free trial with unlimited MAR | Automated zero-maintenance ELT pipeline with 700+ connectors and schema drift management into modern cloud warehouses. |
+| **[Talend (Qlik Talend Cloud)](https://www.talend.com/)** | **Qlik / Talend**: ~$2.4B Acq. / ~$350M Rev | Starter tiers start at ~$300/month (billed annually); full enterprise packages scale from ~$50K+/year | **14-day free trial** with pipeline capacity testing limits (Talend Open Studio retired) | Heavy-duty enterprise data integration, API services, and data quality/governance engine. |
+| **[Airbyte Cloud](https://airbyte.com/)** | **Airbyte**: ~$1.5B Valuation | Standard tier starts at base ~$10–$20/month; usage at ~$2.50–$5.00 per credit (Open-source self-hosted is free) | **14-day free trial** including **400 free trial credits** (~100 GB data transfer, no credit card required) | Managed version of the leading open-source ELT platform with 600+ pre-built connectors and no-code Connector Builder. |
+| **[Matillion](https://www.matillion.com/)** | **Matillion**: ~$1.5B Valuation / ~$100M ARR | Consumption-based starting at ~$2.00–$3.50 per credit (Teams tier starts at ~$1,000/month) | **14-day free trial** including **500 free credits** for 1 developer user (Developer tier) | Cloud-native pushdown ELT/ETL platform running transformation compute directly inside Snowflake, Databricks, Redshift, and BigQuery. |
+| **[Stitch](https://www.stitchdata.com/)** | **Qlik / Talend**: ~$60M Acq. by Talend | Standard plan starts at **$100/month** for 5 million monthly rows (scales up with volume) | **14-day free trial** with **unlimited row replication** (no credit card required) | Developer-friendly, lightweight ELT data pipeline tool focused on fast, straightforward ingestion from SaaS and database sources. |
 
 
 
