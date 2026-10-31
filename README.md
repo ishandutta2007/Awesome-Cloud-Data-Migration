@@ -75,7 +75,7 @@ The market exhibits **moderate fragmentation**: while foundational cloud infrast
 
 ## 🔓 Open-Source GitHub Projects
 
-The open-source data migration ecosystem delivers battle-tested tools ranging from raw cloud-storage file sync utilities and distributed streaming CDC engines to modular Python-first ELT libraries. Below is the curated list of top open-source projects, **sorted by GitHub Stars_Count in descending order**:
+The open-source data migration ecosystem delivers battle-tested tools ranging from raw cloud-storage file sync utilities and distributed streaming CDC engines to modular Python-first ELT libraries. Below is the curated list of top open-source projects, **sorted by GitHub_Stars_Count in descending order**:
 
 ### 1. [Rclone](https://github.com/rclone/rclone) [![Stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers)
 * **Description**: *"rsync for cloud storage"* — the gold standard multi-cloud sync, migration, and transfer command-line program.
